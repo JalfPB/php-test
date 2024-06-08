@@ -26,10 +26,10 @@ curl_close($ch);
 </head>
 
 <main>
+    <h2>La proxima pélicula de Marvel</h2>  
     <section>
-        <img src="<?= $data["poster_url"] ?>" width="300" alt="Poster de <?= $data["title"] ?>
+        <img src="<?= $data["poster_url"] ?>" width="200" alt="Poster de <?= $data["title"] ?>
         "style="border-radius: 16px">
-        <h2>La proxima pélicula de Marvel</h2>
     </section>
 
     <hgroup>
@@ -45,6 +45,10 @@ curl_close($ch);
 <style>
     :root {
         color-scheme: light dark;
+    }
+
+    h2{
+        text-align: center;
     }
 
     body{
